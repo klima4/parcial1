@@ -1,7 +1,14 @@
 using System.IO;
 
-//datos
-string name = "index.html";
+namespace prueba1
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            //codigoH codigo = new codigoH();
+
+            string name = "index.html";
             string nombres = datos("Ingrese sus nombres");
             string apellidos = datos("Ingrese sus apellidos");
             string hab = datos("Ingrese sus habilidades");
@@ -12,19 +19,21 @@ string name = "index.html";
             {
                 Directory.CreateDirectory(ruta);
             }
-            
+
             //Aqui digitaremos el codigo html que se leerá
-        public string hmtl = " <!DOCTYPE html>" +
+            string hmtl = " <!DOCTYPE html>" +
                       "<head> " +
                     "<title>Datos Usuario</title>" +
                        "</head>" +
                       " <body> " +
                            "  <h1>Datos personales del usuario:</h1>" +
                             "<h2>Bienvenida " + nombres + "</h2>" +
-                            " </body>" + 
+                            " </body>" +
                            "  </html> ";
 
-File.WriteAllText("C:\\tmp\\Parcial I\\" + name, codigo.);
+
+            File.WriteAllText("C:\\tmp\\Parcial I\\" + name, hmtl);
+       
 
 
             Console.ReadLine();
@@ -37,6 +46,6 @@ File.WriteAllText("C:\\tmp\\Parcial I\\" + name, codigo.);
             string val = Console.ReadLine();
             return val;
         }
-
-
     }
+
+   
