@@ -1,5 +1,5 @@
 using System.IO;
-
+//Funcional hasta 1:30pm
 namespace prueba1
 {
     class Program
