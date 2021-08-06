@@ -20,14 +20,22 @@ namespace prueba1
                 Directory.CreateDirectory(ruta);
             }
 
+           //PAGINA HTML
             //Aqui digitaremos el codigo html que se leerá
+            string css = "h2{color:#00f}";
             string hmtl = " <!DOCTYPE html>" +
                       "<head> " +
                     "<title>Datos Usuario</title>" +
                        "</head>" +
-                      " <body> " +
-                           "  <h1>Datos personales del usuario:</h1>" +
-                            "<h2>Bienvenida " + nombres + "</h2>" +
+
+                       "<style>" + css + "</style>" +
+                          " <body> " +
+                           "  <h1>Mi primera página Web </h1>" +
+                            "<h2>Biografía Personal</h2>" +
+                            "<h3>" +nombres+ " "+ apellidos + "</h3>" + 
+                            "<p>Mis habilidades son " + hab +"</p>"+
+                            "<p>Hobbies" + hobbies + "</p>" +
+
                             " </body>" +
                            "  </html> ";
 
