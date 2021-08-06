@@ -1,0 +1,42 @@
+using System.IO;
+
+//datos
+string name = "index.html";
+            string nombres = datos("Ingrese sus nombres");
+            string apellidos = datos("Ingrese sus apellidos");
+            string hab = datos("Ingrese sus habilidades");
+            string hobbies = datos("Ingrese sus hobies");
+
+            string ruta = "C:\\tmp\\Parcial I";
+            if(Directory.Exists(ruta) == false)
+            {
+                Directory.CreateDirectory(ruta);
+            }
+            
+            //Aqui digitaremos el codigo html que se leerá
+        public string hmtl = " <!DOCTYPE html>" +
+                      "<head> " +
+                    "<title>Datos Usuario</title>" +
+                       "</head>" +
+                      " <body> " +
+                           "  <h1>Datos personales del usuario:</h1>" +
+                            "<h2>Bienvenida " + nombres + "</h2>" +
+                            " </body>" + 
+                           "  </html> ";
+
+File.WriteAllText("C:\\tmp\\Parcial I\\" + name, codigo.);
+
+
+            Console.ReadLine();
+
+        }
+
+        static string datos(string txt)
+        {
+            Console.WriteLine(txt);
+            string val = Console.ReadLine();
+            return val;
+        }
+
+
+    }
